@@ -1,1 +1,0 @@
-var foundationRoutes = [{"name":"thanks","url":"/thanks","animationIn":"fadeIn slow easeOut","path":"templates/thanks.html"},{"name":"confirmed","url":"/confirmed","animationIn":"fadeIn slow easeOut","path":"templates/confirmed.html"},{"name":"home","url":"/","animationIn":"fadeIn slow easeOut","path":"templates/home.html"}]; 
