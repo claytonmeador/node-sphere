@@ -6163,6 +6163,12 @@ blockquote, blockquote p {
     .hero-area h1 {
       font-size: 1.75rem; } }
 
+.thanks {
+  margin-top: 2rem; }
+  .thanks h1, .thanks p {
+    width: 100%;
+    text-align: center; }
+
 .fixed-width {
   max-width: 31.25rem; }
 
