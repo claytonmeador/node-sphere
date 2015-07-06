@@ -33,6 +33,13 @@
     width: 100%;
     text-align: center;
   }
+  h1 {
+    font-size: rem-calc(18);
+    letter-spacing: 2px;
+    @include breakpoint(medium) {
+      font-size: rem-calc(32);
+    }
+  }
 
 }
 

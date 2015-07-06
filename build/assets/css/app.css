@@ -6168,6 +6168,12 @@ blockquote, blockquote p {
   .thanks h1, .thanks p {
     width: 100%;
     text-align: center; }
+  .thanks h1 {
+    font-size: 1.125rem;
+    letter-spacing: 2px; }
+    @media only screen and (min-width: 40em) {
+      .thanks h1 {
+        font-size: 2rem; } }
 
 .fixed-width {
   max-width: 31.25rem; }
