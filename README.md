@@ -1,8 +1,6 @@
-# Foundation for Apps Template
+# LifeLink landing page
 
-This is the default template project for Foundation for Apps, powered by Gulp, Angular, and libsass. It provides you with a basic template to get started with Foundation for Apps and Angular.
-
-If you're already an Angular developer, you may instead want to install the components into your own stack using Bower: `bower install foundation-apps`
+This repo builds the static pages used for the LifeLink landing page.  (This page lets people sign up for a MailChimp mailing list.)  It is based on Foundation for Apps and is built with NPM.
 
 ## Requirements
 
@@ -16,10 +14,10 @@ You'll need the following software installed to get started.
 
 ## Get Started
 
-Clone this repository, where `app` is the name of your app.
+Clone this repository.
 
 ```bash
-git clone https://github.com/zurb/foundation-apps-template.git app
+git clone https://github.com/claytonmeador/node-sphere
 ```
 
 Change into the directory.
@@ -48,3 +46,9 @@ To run the compiling process once, without watching any files, use the `build` c
 ```bash
 npm start build
 ```
+
+# Publish
+
+When you're happy with the site, copy the contents of the build/ directory into https://github.com/lifelink-core/lifelink-core.github.io.  Pushing that repo will update the pages shown by MailChimp (which are served by GitHub Pages.)
+
+Or, make this process more automated.
