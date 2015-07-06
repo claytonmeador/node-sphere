@@ -10,6 +10,7 @@
   background-color: $primary-brand-color;
 }
 .hero-area {
+  margin-top: 1rem;
   @include breakpoint(medium) {
     @include spaced(2rem);
     margin-top: 4rem;

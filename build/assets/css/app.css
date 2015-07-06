@@ -6148,20 +6148,22 @@ blockquote, blockquote p {
 .primary-brand {
   background-color: #00A3B3; }
 
-@media only screen and (min-width: 40em) {
-  .hero-area {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    margin-top: 4rem; } }
-.hero-area img {
-  width: 20rem;
-  height: 5rem; }
-.hero-area h1 {
-  font-size: 1.125rem;
-  letter-spacing: 2px; }
+.hero-area {
+  margin-top: 1rem; }
   @media only screen and (min-width: 40em) {
-    .hero-area h1 {
-      font-size: 1.75rem; } }
+    .hero-area {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      margin-top: 4rem; } }
+  .hero-area img {
+    width: 20rem;
+    height: 5rem; }
+  .hero-area h1 {
+    font-size: 1.125rem;
+    letter-spacing: 2px; }
+    @media only screen and (min-width: 40em) {
+      .hero-area h1 {
+        font-size: 1.75rem; } }
 
 .thanks {
   margin-top: 2rem; }
