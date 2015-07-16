@@ -22,12 +22,16 @@ var paths = {
   assets: [
     './client/**/*.*',
     '!./client/templates/**/*.*',
-    '!./client/assets/{scss,js}/**/*.*'
+    '!./client/assets/{scss,js}/**/*.*',
+    '!./client/assets/img/favicon.ico'
   ],
   // Sass will check these folders for files when you use @import.
   sass: [
     'client/assets/scss',
     'bower_components/foundation-apps/scss'
+  ],
+  favicon: [
+    'client/assets/img/favicon.ico'
   ],
   // These files include Foundation for Apps and its dependencies
   foundationJS: [
@@ -97,6 +101,11 @@ gulp.task('copy:foundation', function(cb) {
   cb();
 });
 
+gulp.task('copy:favicon', function(cb) {
+  return gulp.src(paths.favicon)
+    .pipe(gulp.dest('./build/'))
+});
+
 // Compiles Sass
 gulp.task('sass', function () {
   return gulp.src('client/assets/scss/app.scss')
@@ -156,7 +165,7 @@ gulp.task('server', ['build'], function() {
 
 // Builds your entire app once, without starting a server
 gulp.task('build', function(cb) {
-  sequence('clean', ['copy', 'copy:foundation', 'sass', 'uglify'], 'copy:templates', cb);
+  sequence('clean', ['copy', 'copy:foundation', 'copy:favicon', 'sass', 'uglify'], 'copy:templates', cb);
 });
 
 // Default task: builds your app, starts a server, and recompiles assets when they change
